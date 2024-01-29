@@ -75,6 +75,7 @@ nav .circle{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin: 20px 0;
 }
 
 .music-player .controls .icon{
@@ -92,5 +93,15 @@ nav .circle{
 .music-player .controls img{
     width:20px;
     height: 20px;
-    
+    margin-left: 3px;
+}
+
+.controls .icon .firstChild{
+    margin-right: 5px;
+}
+
+.controls .icon:nth-child(2){
+    background-color: rgb(255, 213, 154);
+    width: 60px;
+    height: 60px;
 }
