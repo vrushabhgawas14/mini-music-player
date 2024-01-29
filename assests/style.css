@@ -93,7 +93,6 @@ nav .circle{
 .music-player .controls img{
     width:20px;
     height: 20px;
-    margin-left: 3px;
 }
 
 .controls .icon .firstChild{
@@ -104,4 +103,13 @@ nav .circle{
     background-color: rgb(255, 213, 154);
     width: 60px;
     height: 60px;
+}
+
+.music-player audio::-webkit-media-controls-panel{
+    background-color: rgb(255, 213, 154);
+}
+
+.music-player audio{
+    width: 80%;
+    height: 40px;
 }
