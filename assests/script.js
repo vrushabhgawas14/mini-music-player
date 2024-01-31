@@ -4,6 +4,7 @@ function changeImg(){
     let audio = document.getElementById('player');
     let artistImg = document.querySelector(".song-img");
     if (audio.paused) {
+        audio.load();
         audio.play();
         img.src = "./assests/imgs/svgs/pause.svg";
         artistImg.classList.add("rotate");
