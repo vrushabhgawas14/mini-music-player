@@ -13,32 +13,34 @@
         <div class="music-player">
             <nav>
                 <div class="circle">
-                    <img src="./assests/imgs/angle-left.svg" alt="left angle">
+                    <img src="./assests/imgs/svgs/angle-left.svg" alt="left angle">
                 </div>
                 <div class="circle">
-                    <img src="./assests/imgs/bars.svg" alt="bar">
+                    <img src="./assests/imgs/svgs/bars.svg" alt="bar">
                 </div>
             </nav>
 
             <div class="artistImg">
-                <img src="./assests/imgs/vrushabh-crop.jpg" class="song-img" alt="song">
+                <img src="./assests/imgs/stephenSong.jpg" class="song-img" alt="song">
             </div>
-            <h1>Until I found her</h1>
-            <p>Stephen Sanchez</p>
+            <div class="details">
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Track Artist</div>
+            </div>
 
             <audio controls id="player">
                 <source src="./assests/audio/Until_i_FoundYou.mpeg" type="audio/mpeg">
             </audio>
 
             <div class="controls">
-                <div class="icon">
-                    <img src="./assests/imgs/backward.svg" alt="backward" class="firstChild">
+                <div class="icon prev-track"  onclick="prevTrack()">
+                    <img src="./assests/imgs/svgs/backward.svg" alt="backward" class="firstChild">
                 </div>
-                <div class="icon"  onclick="changeImg()">
-                        <img src="./assests/imgs/play.svg" alt="play" id="secondImg">
+                <div class="icon curr-track"  onclick="changeImg();currTrack()">
+                        <img src="./assests/imgs/svgs/play.svg" alt="play" id="secondImg">
                 </div>
-                <div class="icon" onclick="changeSong()">
-                    <img src="./assests/imgs/forward.svg" alt="forward" id="thirdImg">
+                <div class="icon next-track" onclick="nextTrack()">
+                    <img src="./assests/imgs/svgs/forward.svg" alt="forward" id="thirdImg">
                 </div>
             </div>
         </div>
