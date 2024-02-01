@@ -39,7 +39,7 @@ const musicList = [
     }
 ]
 
-if(track_index == 0){
+if(show_Data() != 0){
     track_index = show_Data();
 }
 loadTrack(track_index);
@@ -50,7 +50,7 @@ function loadTrack(track_index){
     artistImg.src = musicList[track_index].img;
     track_name.textContent = musicList[track_index].name;
     track_artist.textContent = musicList[track_index].artist;
-    save_Data(track_index);
+
     curr_track.addEventListener('ended',nextTrack);
 }
 
@@ -60,6 +60,7 @@ function nextTrack(){
     }else{
         track_index = 0;
     }
+    save_Data(track_index);
     loadTrack(track_index);
     playTrack();
 }
@@ -70,6 +71,7 @@ function prevTrack(){
     }else{
         track_index = musicList.length -1;
     }
+    save_Data(track_index);
     loadTrack(track_index);
     playTrack();
 }
