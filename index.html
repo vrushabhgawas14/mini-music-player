@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Player</title>
     <link rel="stylesheet" href="./assests/style.css">
-    <script src="./assests/script.js"></script>
+    <script defer src="./assests/script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -21,22 +21,22 @@
             </nav>
 
             <div class="artistImg">
-                <img src="./assests/imgs/stephenSong.jpg" class="song-img" alt="song">
+                <img src="" class="song-img" alt="song">
             </div>
             <div class="details">
                 <div class="track-name">Track Name</div>
                 <div class="track-artist">Track Artist</div>
             </div>
 
-            <audio controls id="player">
-                <source src="./assests/audio/Until_i_FoundYou.mpeg" type="audio/mpeg">
+            <audio controls id="player" controlsList="nodownload noplaybackrate">
+                <source src="" type="audio/mpeg">
             </audio>
 
             <div class="controls">
                 <div class="icon prev-track"  onclick="prevTrack()">
                     <img src="./assests/imgs/svgs/backward.svg" alt="backward" class="firstChild">
                 </div>
-                <div class="icon curr-track"  onclick="changeImg();currTrack()">
+                <div class="icon playpause-track"  onclick="playPauseTrack()">
                         <img src="./assests/imgs/svgs/play.svg" alt="play" id="secondImg">
                 </div>
                 <div class="icon next-track" onclick="nextTrack()">

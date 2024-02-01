@@ -100,6 +100,11 @@ nav .circle{
     background-color: rgb(255, 213, 154);
 }
 
+.music-player audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display{
+    font-size: 0.8rem;
+}
+
 .music-player audio{
     width: 90%;
     height: 40px;
