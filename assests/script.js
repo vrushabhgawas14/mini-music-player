@@ -39,6 +39,9 @@ const musicList = [
     }
 ]
 
+if(track_index == 0){
+    track_index = show_Data();
+}
 loadTrack(track_index);
 function loadTrack(track_index){
     curr_track.src = musicList[track_index].music;
@@ -47,7 +50,7 @@ function loadTrack(track_index){
     artistImg.src = musicList[track_index].img;
     track_name.textContent = musicList[track_index].name;
     track_artist.textContent = musicList[track_index].artist;
-
+    save_Data(track_index);
     curr_track.addEventListener('ended',nextTrack);
 }
 
@@ -87,4 +90,12 @@ function pauseTrack(){
     curr_track.pause();
     isPlaying = false;
     playpauseImg.src = "./assests/imgs/svgs/play.svg";
+}
+
+function save_Data(track_index){
+    localStorage.setItem("Data",track_index);
+}
+
+function show_Data(){
+    return localStorage.getItem("Data");
 }
