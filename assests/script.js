@@ -53,7 +53,7 @@ const englishList = [
         "img": "./assests/imgs/English/stephenSong.jpg",
         "name": "Until I found her",
         "artist": "Stephen Sanchez",
-        "music": "./assests/audio/English/Until_i_Found_U.mp3"
+        "music": "./assests/audio/English/Until_I_found_U.mp3"
     },
     {
         "img": "./assests/imgs/English/Fran1.jpg",
