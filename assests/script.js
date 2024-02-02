@@ -53,7 +53,7 @@ const englishList = [
         "img": "./assests/imgs/English/stephenSong.jpg",
         "name": "Until I found her",
         "artist": "Stephen Sanchez",
-        "music": "./assests/audio/English/Until_i_FoundYou.mpeg"
+        "music": "./assests/audio/English/Until_i_Found_U.mp3"
     },
     {
         "img": "./assests/imgs/English/Fran1.jpg",
@@ -72,16 +72,30 @@ const englishList = [
         "music": "./assests/audio/English/RosesAreRed.m4a"
     }
 ]
+// I wanna be yours, Heather, Lover
 
 const marathiList = [
     {
-        img: './assests/imgs/Marathi/vrushabh-crop.jpg',
-        name: 'Darling',
-        artist: 'Vrushabh Gawas',
-        music: './assests/audio/Marathi/InTheEnd.mp3'
+        img: './assests/imgs/Marathi/ganpati.jpg',
+        name: 'Ekadantaya',
+        artist: 'Suprabha KV',
+        music: './assests/audio/Marathi/Ekadantaya.mp3'
+    },
+    {
+        img: './assests/imgs/Marathi/marathi.jpg',
+        name: 'Bolato Marathi',
+        artist: 'Various Artists',
+        music: './assests/audio/Marathi/BolotoMarathi.mp3'
+    },
+    {
+        img: './assests/imgs/Marathi/madhumas.jpg',
+        name: 'Baharla Madhumas',
+        artist: 'Shreya Ghoshal',
+        music: './assests/audio/Marathi/BaharlaHaMadhumas.mp3'
     }
 ]
-
+//kakan,baharla,radha hi bawari,Man talyat,chandra aahe sakshila,boloto marathi,
+//ganpati bappa
 const hindiList = [
     {
         img: './assests/imgs/Hindi/mujheMK.jpg',
@@ -98,17 +112,19 @@ const hindiList = [
     {
         img: './assests/imgs/Hindi/Dangal.jpg',
         name: 'Gilehriyaan',
-        artist: 'Pritam',
+        artist: 'Jonita Gandhi',
         music: './assests/audio/Hindi/Gilehriyaan.mp3'
     }
 ]
+// moh moh ke dhage, sawaar loon, kasoor, Monta re, alag Aasmaan, Kaise abb kahen,
+// tere hawaale, Gul, Gilehriyaan, Radha kaise na Jale
 
-if (localStorage.getItem("myData") == "Marathi") {
-    currMusicList = marathiList;
+if (localStorage.getItem("myData") == "English") {
+    currMusicList = englishList;
 }else if(localStorage.getItem("myData") == "Hindi"){
     currMusicList = hindiList;
 }else{
-    currMusicList = englishList;
+    currMusicList = marathiList;
 }
 
 loadTrack(track_index);

@@ -67,6 +67,7 @@ nav .circle{
     align-items: center;
     flex-direction: column;
     visibility:hidden;
+    z-index: 2;
 }
 
 .drop-down .item{
