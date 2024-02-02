@@ -49,6 +49,39 @@ nav .circle{
     cursor: pointer;
 }
 
+.has-dropdown{
+    position: relative;
+}
+
+.has-dropdown:hover{
+    background-color:rgb(255, 209, 148) ;
+}
+
+.drop-down{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,15%);
+    list-style:none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    visibility:hidden;
+}
+
+.drop-down .item{
+    padding: 0 10px;
+    margin: 3px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #d2e0edcb;
+    font-weight: 600;
+}
+
+.drop-down .item:hover{
+    background-color: #9ec9da9a;
+}
+
 .music-player .artistImg{
     width: 150px;
     height: 150px;
@@ -130,6 +163,10 @@ audio::-webkit-media-controls-time-remaining-display{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.music-player .controls .icon:hover{
+    background-color:rgba(253, 225, 186, 0.836) ;
 }
 
 .music-player .controls img{
