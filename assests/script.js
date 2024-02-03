@@ -136,7 +136,7 @@ function loadTrack(track_index){
     artistImg.src = currMusicList[track_index].img;
     track_name.textContent = currMusicList[track_index].name;
     track_artist.textContent = currMusicList[track_index].artist;
-    song_index.textContent = track_index + "/" + currMusicList.length;
+    song_index.textContent = (track_index +1) + "/" + currMusicList.length;
     curr_track.addEventListener('ended',nextTrack);
 }
 
