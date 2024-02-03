@@ -128,7 +128,8 @@ nav .circle{
     font-size: 1rem;
     font-family: 'Fira Code',sans-serif;
     font-weight:600;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
+    height: 3rem;
 }
 
 .music-player audio::-webkit-media-controls-panel{

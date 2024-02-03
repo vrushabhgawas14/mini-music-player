@@ -62,18 +62,27 @@ const englishList = [
         "artist": "Fran Vasilić",
         "music": "./assests/audio/English/Hypotheticals.mp3"
     },{
-        "img": "./assests/imgs/English/makeUmine1.jpg",
-        "name": "Make You Mine",
-        "artist": "PUBLIC",
-        "music": "./assests/audio/English/MakeYouMine.mp3"
+        "img": "./assests/imgs/English/IWannaBe.jpg",
+        "name": "I Wanna Be Yours",
+        "artist": "Artic Monkeys",
+        "music": "./assests/audio/English/IWannaBeYours.mp3"
+    },{
+        "img": "./assests/imgs/English/Conan.jpg",
+        "name": "Heather",
+        "artist": "Conan Gray",
+        "music": "./assests/audio/English/Heather.mp3"
     },{
         "img": "./assests/imgs/English/jon.jpg",
         "name": "Roses are Red",
         "artist": "Jon Caryl",
         "music": "./assests/audio/English/RosesAreRed.m4a"
+    },{
+        "img": "./assests/imgs/English/makeUmine1.jpg",
+        "name": "Make You Mine",
+        "artist": "PUBLIC",
+        "music": "./assests/audio/English/MakeYouMine.mp3"
     }
 ]
-// I wanna be yours, Heather, Lover
 
 const marathiList = [
     {
@@ -93,32 +102,90 @@ const marathiList = [
         name: 'Baharla Ha Madhumas',
         artist: 'Shreya Ghoshal',
         music: './assests/audio/Marathi/BaharlaHaMadhumas.mp3'
-    }
-]
-//kakan,baharla,radha hi bawari,Man talyat,chandra aahe sakshila,boloto marathi,
-//ganpati bappa
-const hindiList = [
-    {
-        img: './assests/imgs/Hindi/mujheMK.jpg',
-        name: 'Mujh Mein Kahin',
-        artist: 'Ajay Atul',
-        music: './assests/audio/Hindi/MujhMeinKahin.mp3'
     },
     {
-        img: './assests/imgs/Hindi/DeMZ.jpg',
-        name: 'De Mauka Zindagi',
-        artist: 'Nilotpal Bora',
-        music: './assests/audio/Hindi/DeMaukaZindagi.mp3'
+        img: './assests/imgs/Marathi/kaakan1.png',
+        name: 'Kaakan',
+        artist: 'Neha Rajpal & Shankar Mahadevan',
+        music: './assests/audio/Marathi/Kaakan.mp3'
+    },
+    {
+        img: './assests/imgs/Marathi/ManTalyat.jpg',
+        name: 'Man Talyat',
+        artist: 'Shailesh Ranade',
+        music: './assests/audio/Marathi/ManTalyatMalyat.mp3'
+    },
+    {
+        img: './assests/imgs/Marathi/ManUdhanVaryache.jpg',
+        name: 'Man Udhan Varyache',
+        artist: 'Ajay-Atul & Shankar Mahadevan',
+        music: './assests/audio/Marathi/ManUdhanVaryache.mp3'
+    }
+]
+
+const hindiList = [
+    {
+        img: './assests/imgs/Hindi/SawaarLoon.jpg',
+        name: 'Sawaar Loon',
+        artist: 'Monali Thakur',
+        music: './assests/audio/Hindi/SawaarLoon.mp3'
+    },
+    {
+        img: './assests/imgs/Hindi/TereHawale.jpg',
+        name: 'Tere Hawaale',
+        artist: 'Arijit Singh & Shilpa Rao',
+        music: './assests/audio/Hindi/TereHawale.mp3'
+    },
+    {
+        img: './assests/imgs/Hindi/SawaarLoon.jpg',
+        name: 'Monta Re',
+        artist: 'Amit Trivedi & Swanand Kirkire',
+        music: './assests/audio/Hindi/MontaRe.mp3'
+    },
+    {
+        img: './assests/imgs/Hindi/Kasoor.jpg',
+        name: 'Kasoor',
+        artist: 'Prateek Kuhad',
+        music: './assests/audio/Hindi/Kasoor.mp3'
+    },
+    {
+        img: './assests/imgs/Hindi/AlagAasmaan.jpg',
+        name: 'Alag Aasmaan',
+        artist: 'Anuv Jain',
+        music: './assests/audio/Hindi/AlagAasmaan.mp3'
+    },
+    {
+        img: './assests/imgs/Hindi/KaiseAbKahein.jpg',
+        name: 'Kaise Ab Kahein',
+        artist: 'Aasa Singh & Gaurav Chatterji',
+        music: './assests/audio/Hindi/KaiseAbKahein.mp3'
     },
     {
         img: './assests/imgs/Hindi/Dangal.jpg',
         name: 'Gilehriyaan',
         artist: 'Jonita Gandhi',
         music: './assests/audio/Hindi/Gilehriyaan.mp3'
+    },
+    {
+        img: './assests/imgs/Hindi/Gul.jpg',
+        name: 'Gul',
+        artist: 'Anuv Jain',
+        music: './assests/audio/Hindi/Gul.mp3'
+    },
+    {
+        img: './assests/imgs/Hindi/MohMohKeDhaage.jpg',
+        name: 'Moh Moh Ke Dhaage',
+        artist: 'Monali Thakur',
+        music: './assests/audio/Hindi/MohMohKeDhaage.mp3'
+    },
+    {
+        img: './assests/imgs/Hindi/RadhaKaiseNaJale.jpg',
+        name: 'Radha Kaise Na Jale',
+        artist: ' Asha Bhosle &  Udit Narayan',
+        music: './assests/audio/Hindi/RadhaKaiseNaJale.mp3'
     }
 ]
-// moh moh ke dhage, sawaar loon, kasoor, Monta re, alag Aasmaan, Kaise abb kahen,
-// tere hawaale, Gul, Gilehriyaan, Radha kaise na Jale
+
 let isEnglish = false;
 let isHindi = false;
 let isMarathi = false;
