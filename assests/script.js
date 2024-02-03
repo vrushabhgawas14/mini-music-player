@@ -4,6 +4,7 @@ let artistImg = document.querySelector(".song-img");
 let track_name = document.querySelector(".track-name");
 let track_artist = document.querySelector(".track-artist");
 let curr_track = document.getElementById('player');
+let song_index = document.querySelector(".song-index");
 
 let track_index = 0;
 let isPlaying = false;
@@ -135,7 +136,7 @@ function loadTrack(track_index){
     artistImg.src = currMusicList[track_index].img;
     track_name.textContent = currMusicList[track_index].name;
     track_artist.textContent = currMusicList[track_index].artist;
-
+    song_index.textContent = track_index + "/" + currMusicList.length;
     curr_track.addEventListener('ended',nextTrack);
 }
 
