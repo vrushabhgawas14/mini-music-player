@@ -90,7 +90,7 @@ const marathiList = [
     },
     {
         img: './assests/imgs/Marathi/madhumas.jpg',
-        name: 'Baharla Madhumas',
+        name: 'Baharla Ha Madhumas',
         artist: 'Shreya Ghoshal',
         music: './assests/audio/Marathi/BaharlaHaMadhumas.mp3'
     }
@@ -119,13 +119,38 @@ const hindiList = [
 ]
 // moh moh ke dhage, sawaar loon, kasoor, Monta re, alag Aasmaan, Kaise abb kahen,
 // tere hawaale, Gul, Gilehriyaan, Radha kaise na Jale
+let isEnglish = false;
+let isHindi = false;
+let isMarathi = false;
 
 if (localStorage.getItem("myData") == "English") {
     currMusicList = englishList;
+    isEnglish = true;
+    isHindi = false;
+    isMarathi = false;
 }else if(localStorage.getItem("myData") == "Hindi"){
     currMusicList = hindiList;
+    isHindi = true;
+    isEnglish = false;
+    isMarathi = false;
 }else{
     currMusicList = marathiList;
+    isMarathi = true;
+    isEnglish = false;
+    isHindi = false;
+}
+
+if(isEnglish && localStorage.getItem("myEnglish") != null)
+{
+    track_index = parseInt(localStorage.getItem("myEnglish"));
+}
+else if(isHindi && localStorage.getItem("myHindi") != null)
+{
+    track_index = parseInt(localStorage.getItem("myHindi"));
+}
+else if(isMarathi && localStorage.getItem("myMarathi") != null)
+{
+    track_index = parseInt(localStorage.getItem("myMarathi"));
 }
 
 loadTrack(track_index);
@@ -133,10 +158,30 @@ function loadTrack(track_index){
     curr_track.src = currMusicList[track_index].music;
     curr_track.load();
 
+    song_index.textContent = (track_index + 1) + "/" + currMusicList.length;
     artistImg.src = currMusicList[track_index].img;
     track_name.textContent = currMusicList[track_index].name;
     track_artist.textContent = currMusicList[track_index].artist;
-    song_index.textContent = (track_index +1) + "/" + currMusicList.length;
+
+    if(track_name.innerHTML.length > 16){
+        track_name.style.fontSize = "1.2rem";
+    }else{
+        track_name.style.fontSize = "1.5rem";
+    }
+
+    if(isEnglish)
+    {
+        localStorage.setItem("myEnglish",track_index);
+    }
+    else if(isHindi)
+    {
+        localStorage.setItem("myHindi",track_index);
+    }
+    else
+    {
+        localStorage.setItem("myMarathi",track_index);
+    }
+
     curr_track.addEventListener('ended',nextTrack);
 }
 
