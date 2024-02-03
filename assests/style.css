@@ -10,7 +10,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: #d2e0ed;
+    background: #2d6e7b;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +21,8 @@
 .music-player{
     width: 350px;
     padding: 20px 35px;
-    background: rgb(158, 201, 218);
+    background: #141834;
+    color: rgba(255, 255, 255, 0.61);
     text-align: center;
     border-radius: 5px;
     box-shadow: -5px 7px 10px 1px rgba(0, 0, 0, 0.604),inset 1px -1px 4px 1px rgba(14, 14, 14, 0.423);
@@ -43,9 +44,9 @@ nav .circle{
     width:40px;
     height: 40px;
     line-height: 50px;
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0.877);
     border-radius: 50%;
-    box-shadow: 0px 1px 20px 1px rgba(250, 128, 114, 0.821);
+    box-shadow: 0px 1px 20px 1px rgba(250, 128, 114, 0.658);
     cursor: pointer;
 }
 
@@ -74,13 +75,13 @@ nav .circle{
     padding: 0 10px;
     margin: 3px 10px;
     border-radius: 5px;
-    border: 1px solid black;
-    background-color: #d2e0edcb;
+    border: 1px solid rgb(214, 214, 214);
+    background-color: #141834;
     font-weight: 600;
 }
 
 .drop-down .item:hover{
-    background-color: #9ec9da9a;
+    background-color: #3a406e6e;
 }
 
 .music-player .artistImg{
@@ -159,8 +160,8 @@ audio::-webkit-media-controls-time-remaining-display{
 .music-player .controls .icon{
     width: 40px;
     height: 40px;
-    background-color: antiquewhite;
-    box-shadow: 0px 1px 20px 1px rgba(250, 128, 114, 0.821);
+    background-color: rgba(252, 224, 186, 0.863);
+    box-shadow: 0px 1px 20px 1px rgba(250, 128, 114, 0.548);
     cursor: pointer;
     border-radius: 50%;
     display: flex;
