@@ -139,7 +139,11 @@ nav .circle{
 
 .music-player audio::-webkit-media-controls-current-time-display,
 audio::-webkit-media-controls-time-remaining-display{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.music-player audio::-webkit-media-controls-play-button{
+    display: none;
 }
 
 .music-player audio{
