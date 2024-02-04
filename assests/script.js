@@ -155,7 +155,7 @@ const hindiList = [
         music: './assests/audio/Hindi/AlagAasmaan.mp3'
     },
     {
-        img: './assests/imgs/Hindi/KaiseAbKahein.jpg',
+        img: './assests/imgs/Hindi/kaiseAbKahein.jpg',
         name: 'Kaise Ab Kahein',
         artist: 'Aasa Singh & Gaurav Chatterji',
         music: './assests/audio/Hindi/KaiseAbKahein.mp3'
